@@ -1,0 +1,13 @@
+
+
+<div class="tweets">
+	<h2> Justin's Tweets </h2>
+<ul>  <% @j_tweets.each do |tweet| %>
+			<li>
+			<%= image_tag(tweet["profile_image_url"]) %>
+			<h1><%= tweet["from_user"] %></h1>
+			<p><%= tweet["text"] %></p>
+			</li>
+		<% end %> 
+</ul>
+</div>
