@@ -7,8 +7,6 @@ gem 'rails', '3.2.3'
 
 gem 'sqlite3'
 gem 'json'
-gem 'ruby-debug19'
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
