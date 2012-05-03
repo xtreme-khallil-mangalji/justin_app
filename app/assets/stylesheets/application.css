@@ -25,10 +25,15 @@ h1{
 	font-size: 15px;
 }
 
+h2{
+	font-family:helvetica;
+	color: white;
+}	
+
 img{
 	float:left;
 	width:50px;
 	vertical-align: bottom;
 	-moz-border-radius: 15px;
-border-radius: 15px;
+	border-radius: 15px;
 }
