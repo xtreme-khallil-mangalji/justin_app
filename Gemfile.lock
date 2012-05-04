@@ -103,6 +103,7 @@ GEM
     whenever (0.7.3)
       activesupport (>= 2.3.4)
       chronic (~> 0.6.3)
+    will_paginate (3.0.3)
 
 PLATFORMS
   ruby
@@ -117,3 +118,4 @@ DEPENDENCIES
   sqlite3 (= 1.3.5)
   uglifier (>= 1.0.3)
   whenever
+  will_paginate
