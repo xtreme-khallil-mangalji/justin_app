@@ -2,11 +2,11 @@
 	<h2> Justin's Tweets </h2>
 
 <div class="tweets">
-<ul>  <% @j_tweets.each do |tweet| %>
+<ul>  <% @tweets.each do |tweet| %>
 			<li>
-			<%= image_tag(tweet["profile_image_url"]) %>
-			<h1><%= tweet["from_user"] %></h1>
-			<p><%= tweet["text"] %></p>
+			<%= image_tag(tweet.image_url) %>
+			<h1><%= tweet.title %></h1>
+			<p><%= tweet.text %></p>
 			</li>
 		<% end %> 
 </ul>

@@ -1,5 +1,12 @@
 JustinApp::Application.routes.draw do
+    resources :tweets do
+      collection do
+        get 'load'
+      end
+    end
+  
     root to: 'tweets#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

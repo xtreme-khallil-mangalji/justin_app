@@ -1,7 +1,10 @@
 
 class TweetsController < ApplicationController
 	def index
+		@tweets = Tweet.all
+	end
 
+	def load 
 		require 'json'
 		require 'net/http'
 		def parse_search
@@ -18,5 +21,9 @@ class TweetsController < ApplicationController
 		end
 
 		@j_tweets = parse_search["results"]
-	end
+
+  		@j_tweets.each do |tweet| 
+			 tweet = Tweet.create(image_url: tweet["profile_image_url"], text: tweet["text"],title: tweet["from_user"])
+		end
+  	end
 end
