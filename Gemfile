@@ -21,7 +21,7 @@ end
 gem 'jquery-rails'
 
 
-	gem 'pg'
+gem 'pg'
 
 
 group :development do
